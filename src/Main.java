@@ -34,5 +34,34 @@ public class Main {
         System.out.println("Потребуется дней: " + days);
 
 
+        int monthNumber = 12;
+        String seasons = null;
+
+        switch (monthNumber) {
+            case 12:
+            case 1:
+            case 2:
+                seasons = "Время года - зима";
+                break;
+            case 3:
+            case 4:
+            case 5:
+                seasons = "Время года - весна";
+                break;
+            case 6:
+            case 7:
+            case 8:
+                seasons = "Время года - лето";
+                break;
+            case 9:
+            case 10:
+            case 11:
+                seasons = "Время года - осень";
+                break;
+            default:
+                seasons = "В году нет такого месяца!";
+        }
+        System.out.println(seasons);
+
     }
 }
